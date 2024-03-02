@@ -1,0 +1,176 @@
+:root{
+    --primary: hsla(243, 100%, 7%, 0.522);
+    --secondary: hsla(240, 86%, 25%, 0.522);
+    --tertiary: hsla(190, 100%, 50%, 0.514);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+body{
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg,var(--primary),var(--secondary),var(--tertiary)) ,url(https://c1.wallpaperflare.com/preview/367/582/368/glass-scifi-violet-ultraviolet.jpg);
+    background-size: cover;
+}   
+.Border-rg{
+    border: 2px solid red;
+}
+.Border-bl{
+    border: 2px solid black;
+}
+li{
+    list-style: none;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.Navbar{
+    color: white;
+    margin: 10px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+a:hover{
+    font-weight: bold;
+}
+.Navbar .logo a{
+    font-size: 1.5rem;
+}
+
+.Navbar ul{
+    display: flex;
+    gap: 2rem;
+}
+.Navbar .toggle_btn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.container{
+    margin: 0 50px;
+    display: flex;
+}
+iframe{
+    margin-left: 200px;
+    margin-top: 100px;
+    height: 80vh;   
+    width: 90vh;
+}
+.wrapper .button{
+    float: left;
+    background: #f5f5f5;
+    width: 60px;
+    height: 60px;
+    margin: 40px 10px ;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px, #888888;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer ;
+    transition: all 0.4s ease-out;   
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50px;
+    line-height: 60px;
+}
+.wrapper .button .icon i{
+    color: black;
+    line-height: 60px;
+    font-size: 20px;
+}
+.wrapper .button span{
+    font-size:  20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.wrapper .button:hover{
+        width: 230px;
+}
+.wrapper .button:nth-child(1):hover .icon i{
+    font-size: 25px;
+}
+.wrapper .button:nth-child(2):hover .icon i{
+    font-size: 25px;
+}
+.wrapper .button:nth-child(3):hover .icon i{
+    font-size: 25px;
+}
+.footer{
+    text-align: center  ;
+}
+.h1,.h2,.h3{
+    text-shadow: 2px 2px 8px #888888;
+}
+.container-sm {
+    display: inline-block;
+    width: 1000px;
+}
+.container-sm .h1{
+    color: #f5f5f5;  
+    font-size: 58px;
+    padding-top: 150px;
+    margin-right: 42px;
+}
+.h3{
+    color:rgb(42, 198, 236);
+    font-size: 58px;
+}
+.container-sm .h2{  
+    color: #fffb00;
+    font-size: 48px;
+}
+.h1 span{
+    opacity: 0;
+    transition: all 2s ease ;
+    transform: translateY(50px);
+}
+.h1 span.type{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.animated-element {
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
