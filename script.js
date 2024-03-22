@@ -24,3 +24,11 @@ function complete(){
     clearInterval(timer)
     timer = null;
 }
+
+
+var typed = new Typed(".type",{
+strings: ["Freelancer","WebDev..","Programer!","Designer","Gamer"],
+typeSpeed: 120,
+backSpeed: 100,
+loop: true
+})
